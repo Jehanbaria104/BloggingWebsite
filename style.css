@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    /* YOUR BACKGROUND IMAGE */
+    background-image: url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Pink transparent layer over background */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(34, 133, 195, 0.35);
+
+    padding: 20px;
+}
+
+
+/* Login box */
+
+.login-box {
+    width: 360px;
+
+    padding: 35px;
+
+    background: rgba(1, 72, 97, 0.92);
+
+    border: 2px solid #04536b;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(5, 122, 143, 0.4);
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.login-box h1 {
+    color: white;
+
+    margin-bottom: 8px;
+}
+
+
+/* Subtitle */
+
+.subtitle {
+    color: white;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+.login-box label {
+    display: block;
+
+    text-align: left;
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* Input boxes */
+
+.login-box input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 7px;
+
+    border: 2px solid #460362;
+
+    border-radius: 10px;
+
+    background: #fff0f4;
+
+    color: #1e0243;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* Input when clicked */
+
+.login-box input:focus {
+    border-color: #1e023f;
+
+    background: #ffe5ed;
+}
+
+
+/* Login button */
+
+.login-box button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #024d4b;
+
+    color: #fff0f4;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button animation */
+
+.login-box button:hover {
+    background: #ac3a62;
+
+    transform: scale(1.03);
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 15px;
+
+    color: #42041a;
+
+    font-weight: bold;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .login-box {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .login-box h1 {
+        font-size: 25px;
+    }
+}
